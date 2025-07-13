@@ -3,34 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>شراء Canva Pro</title>
+  <title>Canva Pro</title>
   <style>
     body {
       font-family: Tahoma, Arial, sans-serif;
       background-color: #f9f9f9;
       margin: 0;
       padding: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center; /* ✅ توسيط عمودي */
-      align-items: center;     /* ✅ توسيط أفقي */
+      justify-content: center; /* توسيط عمودي */
+      align-items: center;     /* توسيط أفقي */
     }
 
     h1 {
       color: #333;
       font-size: 32px;
       margin-bottom: 30px;
-      text-align: center;
+    }
+
+    .paypal-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center; /* توسيط أفقي لمحتوى PayPal */
     }
 
     #paypal-container-XJQ9NYDF4CX74 {
-      display: flex;
-      justify-content: center;
+      width: 300px; /* تحديد عرض موحد للزر والعناصر */
+      max-width: 90vw;
     }
   </style>
 
-  <!-- ✅ سكربت PayPal الرسمي -->
+  <!-- سكربت PayPal الرسمي -->
   <script 
     src="https://www.paypal.com/sdk/js?client-id=BAAWj9RpCQTmLfo7hE27JFZnATjbQmxmN_V7tlpxJYLiub_0WsPE5OXZeb-38HQPGz1lJby8k4WBIspJWc&components=hosted-buttons&disable-funding=venmo&currency=USD">
   </script>
@@ -39,7 +44,9 @@
 
   <h1>Canva Pro Education</h1>
 
-  <div id="paypal-container-XJQ9NYDF4CX74"></div>
+  <div class="paypal-wrapper">
+    <div id="paypal-container-XJQ9NYDF4CX74"></div>
+  </div>
 
   <script>
     paypal.HostedButtons({
