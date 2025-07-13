@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>شراء المنتج</title>
+  <title>شراء Canva Pro</title>
   <style>
     body {
       font-family: Tahoma, Arial, sans-serif;
@@ -24,27 +24,27 @@
       padding: 40px 20px;
       max-width: 500px;
       margin: auto;
-    }
-
-    .placeholder-text {
-      color: #888;
-      font-size: 18px;
+      border-radius: 12px;
     }
   </style>
+
+  <!-- ✅ سكربت PayPal الرسمي -->
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAWj9RpCQTmLfo7hE27JFZnATjbQmxmN_V7tlpxJYLiub_0WsPE5OXZeb-38HQPGz1lJby8k4WBIspJWc&components=hosted-buttons&disable-funding=venmo&currency=USD">
+  </script>
 </head>
 <body>
 
-  <h1>Canva Pro Education</h1>
+  <h1>Canva Pro Education - عرض خاص</h1>
 
   <div class="paypal-code">
-    <!-- 🔽 الصق هنا كود PayPal الخاص بك -->
-   class="placeholder-text">
+    <!-- ✅ زر PayPal باستخدام Hosted Button ID -->
     <div id="paypal-container-XJQ9NYDF4CX74"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "XJQ9NYDF4CX74",
-  }).render("#paypal-container-XJQ9NYDF4CX74")
-</script>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "XJQ9NYDF4CX74",
+      }).render("#paypal-container-XJQ9NYDF4CX74");
+    </script>
   </div>
 
 </body>
