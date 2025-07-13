@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>شراء المنتج</title>
+  <style>
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      background: #f9f9f9;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .paypal-code {
+      background: #fff;
+      border: 2px dashed #ccc;
+      padding: 40px 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .placeholder-text {
+      color: #888;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Canva Pro Education</h1>
+
+  <div class="paypal-code">
+    <!-- 🔽 الصق هنا كود PayPal الخاص بك -->
+    <p class="placeholder-text">هنا يتم لصق كود PayPal الخاص بالمدفوعات</p>
+  </div>
+<div id="paypal-container-XJQ9NYDF4CX74"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "XJQ9NYDF4CX74",
+  }).render("#paypal-container-XJQ9NYDF4CX74")
+</script>
+</body>
+</html>
